@@ -1,0 +1,20 @@
+{
+  "name": "ChaquitaJohnsonMoore",
+  "version": "1.0.0",
+  "description": "![my face](https://media.licdn.com/dms/image/C4E03AQGP8jmsPlAkpw/profile-displayphoto-shrink_200_200/0?e=1546473600&v=beta&t=D5VOPK6zN83RiHHKX2d2I-_QZSx_zebaaAKOqa4w3Sw)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CJohnMoore/Savvy-coders-portfolio-chaquita-johnsonmoore.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CJohnMoore/Savvy-coders-portfolio-chaquita-johnsonmoore/issues"
+  },
+  "homepage": "https://github.com/CJohnMoore/Savvy-coders-portfolio-chaquita-johnsonmoore#readme"
+}
