@@ -1,0 +1,42 @@
+body {
+    background-color: lightseagreen;
+}
+    .container {
+        margin: 0 auto;
+        max-width: 900px;
+        width: 90%;
+}
+h1 {
+    color: green;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+h2 {
+    background-color: teal;
+    font-stretch: extra-expanded;
+}
+
+h3 {
+    background-color: purple;
+    font-size: 2em;
+    font-style: oblique;
+}
+img {
+    display: block;
+    margin: 10em auto;
+    width: 60%;
+}
+#navigation {
+    background-color: blueviolet;
+}
+#header {
+    background-color: black;
+}
+#content {
+    background-color: darkorange;
+    padding:20px;
+}
+#footer {
+    background-color: deepskyblue;
+}
