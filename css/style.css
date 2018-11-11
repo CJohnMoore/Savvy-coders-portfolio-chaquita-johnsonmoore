@@ -70,3 +70,10 @@ img {
 #navigation a + .dropdown:hover {
     display: block;
 }
+#navigation > ul.container {
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
