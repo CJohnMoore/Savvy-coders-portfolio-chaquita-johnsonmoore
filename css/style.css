@@ -13,6 +13,8 @@ h1 {
     color: green;
     font-size: 2em;
     font-weight: bolder;
+    font-family: 'Kumar One', cursive;
+
 }
 
 h2 {
@@ -43,12 +45,21 @@ img {
 
 #footer {
     background-color: deepskyblue;
+}
     
+#navigation > ul {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 0;
+
 }
 #navigation > ul > li {
     display: inline;
     position: relative;
-    padding: 5px;
+    margin: 10px;
 }
 #navigation {
     background-color: royalblue;
