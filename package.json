@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/CJohnMoore/Savvy-coders-portfolio-chaquita-johnsonmoore/issues"
   },
-  "homepage": "https://github.com/CJohnMoore/Savvy-coders-portfolio-chaquita-johnsonmoore#readme"
+  "homepage": "https://github.com/CJohnMoore/Savvy-coders-portfolio-chaquita-johnsonmoore#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.10.3"
+  }
 }
