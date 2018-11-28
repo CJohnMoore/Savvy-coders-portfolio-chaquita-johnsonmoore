@@ -1,7 +1,8 @@
-export default 
-`
-<div id="footer"
-<div class="container"></div>
+export default function Footer() {
+    return `
+
+<div id="footer">
+<div class="container">
     <p>Currently enrolled in SavvyCoders front-end web development class. Demo Day is January 17th!</p>
     </div>
     </div>
@@ -24,3 +25,4 @@ export default
     </div>
     </div>
 `;
+}

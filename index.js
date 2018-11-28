@@ -4,12 +4,16 @@ import Content from './src/Content';
 import Footer from './src/Footer';
 import Greet from './src/Greet';
 
+var state = {
+    'title': 'Welcome to My Savvy Coders Portfolio Project'
+};
+
+
 document.querySelector('#root').innerHTML = `
-    ${Navigation}
-    ${Header}
-    ${Content}
-    ${Footer}
-    ${Greet}
+${Content(state)}
+${Footer(state)}
+${Navigation(state)}
+${Header(state)}
     `;
 
 
@@ -19,7 +23,7 @@ document.querySelector('#root').innerHTML = `
 //function greet(){
   //  if(!userName){
     //    userName = prompt('What is your name, for real this time?');
-        
+
       //  greet();
     //}
     //else{
@@ -28,4 +32,4 @@ document.querySelector('#root').innerHTML = `
 //};
 
 // userName = prompt('What is your name?');
-// greet();
+greet();

@@ -1,4 +1,4 @@
-root {
+#root {
     background-color: lightseagreen;
     display: grid;
     min-height: 100vh;
@@ -104,7 +104,7 @@ ul {
 }
 
 @media (min-width: 750px) {
-    root {
+    #root {
         grid-template-columns: 15% auto;
         grid-template-rows: 40vh auto min-content;
         grid-template-areas: "navigation header" "navigation content" "navigation footer";
