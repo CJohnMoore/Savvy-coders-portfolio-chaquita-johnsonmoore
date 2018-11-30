@@ -4,32 +4,68 @@ import Content from './src/Content';
 import Footer from './src/Footer';
 import Greet from './src/Greet';
 
-var state = {
-    'title': 'Welcome to My Savvy Coders Portfolio Project'
+var links;
+var State = {
+    'active': 'home',
+    'home': {
+        'title': 'Welcome to My Savvy Coders Portfolio Project'
+    },
+    'blog': {
+        'title': 'Go on and click - you know you want to.'
+    },
+    'contact': {
+        'title': 'Get in touch with me!'
+    },
+    'projects': {
+        'title': 'Look upon my works!'
+    }
 };
+var root = document.querySelector('#root');
 
+function handleNavigation(event) {
+    event.preventDefault();
+    State.active = event.target.textContent;
+    render(State); //eslint-disable-line
+}
 
-document.querySelector('#root').innerHTML = `
-${Content(state)}
-${Footer(state)}
-${Navigation(state)}
-${Header(state)}
-    `;
+function render(State) {
+    var links;
 
+    root.innerHTML = `
+    ${Content(state)}
+    ${Footer(state)}
+    ${Navigation(state)}
+    ${Header(state)}
+`;
 
+    greet();
 
-//var title = document.querySelector('h1');
+    links = document.querySelectorAll('#navigation a');
 
-//function greet(){
-  //  if(!userName){
-    //    userName = prompt('What is your name, for real this time?');
-
-      //  greet();
-    //}
-    //else{
-      //  title.textContent += `, <em>${userName}</em>`;
-    //}
-//};
-
-// userName = prompt('What is your name?');
-greet();
+    function handleNavigation(event) {
+        event.preventDefault();
+        console.log(event.target.textContent);
+    }
+    links[0].addEventListener(
+        'click',
+        (event) => {
+            event.preventDefault();
+            console.log(event.target.textContent);
+        }
+    );
+    links[1].addEventListener(
+        'click',
+        (event) => {
+            event.preventDefault();
+            console.log(event.target.textContent);
+        }
+    );
+    links[2].addEventListener(
+        'click',
+        (event) => {
+            event.preventDefault();
+            console.log(event.target.textContent);
+        }
+    );
+}
+render(state);

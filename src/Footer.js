@@ -2,11 +2,8 @@ export default function Footer() {
     return `
 
 <div id="footer">
-<div class="container">
-    <p>Currently enrolled in SavvyCoders front-end web development class. Demo Day is January 17th!</p>
-    </div>
-    </div>
 
+    <div>
     <h3>Contact Information</h3>
     <ul>
         <li class="emphasis">
@@ -23,6 +20,6 @@ export default function Footer() {
         </li>
     </ul>
     </div>
-    </div>
+  
 `;
 }
