@@ -1,15 +1,14 @@
 #root {
-    background-color: lightseagreen;
     display: grid;
     min-height: 100vh;
-    grid-template-rows: min-content 30vh auto min-content;
+    grid-template-rows: 40vh auto min-content;
     grid-template-areas: "navigation" "header" "content" "footer";
 }
 
 h1 {
     background-color: green;
     font-family: 'Kumar One', cursive;
-    font-size: 2em;
+    font-size: 3em;
 }
 
 h2 {
@@ -62,7 +61,7 @@ ul {
 #content {
     background-color: darkorange;
     grid-area: content;
-    padding: 20px;
+    padding: 50px;
 }
 
 #footer {
@@ -99,7 +98,8 @@ ul {
     top: 28px;
 }
 
-#navigation a:hover+.dropdown, #navigation a+.dropdown:hover {
+#navigation a:hover+.dropdown, 
+#navigation a+.dropdown:hover {
     display: block;
 }
 
@@ -107,10 +107,14 @@ ul {
     #root {
         grid-template-columns: 15% auto;
         grid-template-rows: 40vh auto min-content;
-        grid-template-areas: "navigation header" "navigation content" "navigation footer";
+        grid-template-areas: 
+        "navigation header" 
+        "navigation content" 
+        "navigation footer";
     }
-}
 
-#navigation>ul {
+
+#navigation > ul {
     flex-direction: column;
+}
 }
