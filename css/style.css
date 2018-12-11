@@ -8,7 +8,7 @@
 h1 {
     background-color: green;
     font-family: 'Kumar One', cursive;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 h2 {
@@ -17,8 +17,8 @@ h2 {
 
 h3 {
     background-color: purple;
-    font-size: 2em;
-    font-style: italic;
+    font-size: 3em;
+    font-style: bold;
 }
 
 img {
@@ -42,15 +42,16 @@ ul {
 }
 
 .emphasis {
-    font-weight: bold;
+    font-weight: italic;
 }
 #middle {
     font-size: 2em;
-    font-style: italic;
+    font-style: bold;
 }
 #header {
-    background-image: url(https://scontent-ort2-2.xx.fbcdn.net/v/t1.0-9/25507720_10211244405767887_3597120513473694756_n.jpg?_nc_cat=103&_nc_ht=scontent-ort2-2.xx&oh=bcac3c5fa5854f9273eb10fa8c88641c&oe=5C738DEB);
-    background-position: center right;
+    background-color: rgb(2, 10, 4);
+    background-blend-mode: luminosity;
+    background-position: center;
     grid-area: header;
 }
 #header h1,
@@ -61,7 +62,7 @@ ul {
 #content {
     background-color: darkorange;
     grid-area: content;
-    padding: 50px;
+    padding: 10px;
 }
 
 #footer {
@@ -70,10 +71,9 @@ ul {
 }
 
 #navigation {
-    background-color: royalblue;
+    background-color: yellow;
     grid-area: navigation;
-    position: sticky;
-    top: 0;
+    position: center;
 }
 
 #navigation > ul {
@@ -87,7 +87,7 @@ ul {
 
 #navigation > ul > li {
     display: inline;
-    margin: 10px;
+    margin: 50px;
     position: relative;
 }
 
@@ -95,7 +95,7 @@ ul {
     display: none;
     left: 0;
     position: absolute;
-    top: 28px;
+    top: 18px;
 }
 
 #navigation a:hover+.dropdown, 

@@ -1,12 +1,10 @@
 export default function Footer() {
     return `
-
 <div id="footer">
-
-    <div>
-    <h3>Contact Information</h3>
-    <ul>
-        <li class="emphasis">
+    <div class="container">
+        <h3>Contact Information</h3>
+        <ul>
+            <li class="emphasis">
             <i class="fab fa-github"></i>
             GitHub: <a href="https://github.com/CJohnMoore">CJohnMoore</a>
         </li>
@@ -20,6 +18,6 @@ export default function Footer() {
         </li>
     </ul>
     </div>
-  
+</div>
 `;
 }
