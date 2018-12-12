@@ -4,7 +4,6 @@ import greet from './src/Greet';
 import Header from './src/Header';
 import Navigation from './src/Navigation';
 import Navigo from 'navigo';
-import { resolve } from 'path';
 
 var router = new Navigo(window.location.origin);
 

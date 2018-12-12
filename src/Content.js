@@ -1,9 +1,12 @@
-export default function Content() {
+import {capitalize} from 'lodash';
+import * as Screens from './Screens';
+
+export default function Content(state) {
     return `
-<div id="content">
-    <div class="container">
-    <p>Currently enrolled in SavvyCoders front-end web development class. Demo Day is January 17th!</p>
+        <div id="content">
+            <div class="container">
+                ${Screens[capitalize(state.active)]()}
+        </div>
     </div>
-    </div>
-    `;
+`;
 }
