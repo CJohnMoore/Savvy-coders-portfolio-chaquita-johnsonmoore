@@ -1,12 +1,12 @@
 import {capitalize} from 'lodash';
+import {html} from 'lit-html';
 
 function buildLink(link){
-    var href = '';
-
+    var href ='';
     if(link !== 'home'){
-        href = link;
+       href = link;
     }
-    return `
+    return html`
     <li>
         <a href="/${href}" data-navigo>
         ${capitalize(link)}
@@ -16,10 +16,10 @@ function buildLink(link){
 }
 
 export default function Navigation(state) {
-    return `
+    return html`
     <div id="navigation">
-    <ul class="container">
-    ${state[state.active].links.map(buildLink).join('')};
+     <ul class="container">
+      ${state[state.active].links.map(buildLink)}
     </ul>
 </div>
 `;
